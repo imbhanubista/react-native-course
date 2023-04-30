@@ -1,7 +1,7 @@
 import React from "react";
 import {  StyleSheet, View } from "react-native";
 import StatusBarDesign from "./src/components/statusBar/StatusBarDesign";
-import CheckPlatform from "./src/components/checkPlatform/CheckPlatform";
+import StackNavigationDemo from "./src/components/navigation/stackNavigation/StackNavigationDemo";
 
 export default function App() {
   return (
@@ -9,7 +9,7 @@ export default function App() {
      <StatusBarDesign/>
       <View style={styles.container}>
         {/* Your app content goes here */}
-        <CheckPlatform/>
+        <StackNavigationDemo/>
       </View>
     </>
   );
