@@ -1,16 +1,15 @@
 import React from "react";
-import {  StyleSheet, View } from "react-native";
+import { StyleSheet, View,SafeAreaView } from "react-native";
 import StatusBarDesign from "./src/components/statusBar/StatusBarDesign";
-import StackNavigationDemo from "./src/components/navigation/stackNavigation/StackNavigationDemo";
+import TabNavigation from "./src/components/navigation/tabNavigation/TabNavigation";
 
 export default function App() {
   return (
     <>
-     <StatusBarDesign/>
-      <View style={styles.container}>
-        {/* Your app content goes here */}
-        <StackNavigationDemo/>
-      </View>
+      <StatusBarDesign />
+      <SafeAreaView style={styles.container}>
+        <TabNavigation />
+      </SafeAreaView>
     </>
   );
 }
